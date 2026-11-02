@@ -14,17 +14,68 @@ namespace Lab4.Controllers
         {
             db = context;
         }
-        public IActionResult Index()
+        //khai báo biến toàn cục pageSize
+        private int pageSize = 3;
+        public IActionResult Index(int? mid)
         {
-            var learners = db.Learners.Include(m => m.Major).ToList();
-            return View(learners);
+            var learners = (IQueryable<Learner>)db.Learners
+                .Include(m => m.Major);
+            if (mid != null)
+            {
+                learners = (IQueryable<Learner>)db.Learners
+                    .Where(l => l.MajorID == mid)
+                    .Include(m => m.Major);
+            }
+            //tính số trang
+            int pageNum = (int)Math.Ceiling(learners.Count() / (float)pageSize);
+            //trả số trang về view để hiển thị nav-trang
+            ViewBag.pageNum = pageNum;
+            //lấy dữ liệu trang đầu
+            var result = learners.Take(pageSize).ToList();
+            return View(result);
+        }
+        public IActionResult LearnerByMajorID(int mid)
+        {
+            var leaners = db.Learners.Where(l => l.MajorID == mid).Include(m => m.Major).ToList();
+            return PartialView("LearnerTable", leaners);
         }
         public IActionResult Create()
         {
             ViewBag.MajorID = new SelectList(db.Majors, "MajorID", "MajorName");
             return View();
         }
-
+        public IActionResult LearnerFilter(int? mid, string? keyword, int? pageIndex)
+        {
+            //lấy toàn bộ learners trong dbset chuyển về IQuerrable<Learner> để query
+            var learners = (IQueryable<Learner>)db.Learners;
+            //lấy chỉ số trang, nếu chỉ số trang null thì gán ngầm định bằng 1
+            int page = (int)(pageIndex == null || pageIndex <= 0 ? 1 : pageIndex);
+            //nếu có mid thì lọc learner theo mid (chuyên ngành)
+            if (mid != null)
+            {
+                //lọc
+                learners = learners.Where(l => l.MajorID == mid);
+                //gửi mid về view để ghi lại trên nav-phân trang
+                ViewBag.mid = mid;
+            }
+            //nếu có keyword thì tìm kiếm theo tên
+            if (keyword != null)
+            {
+                //tìm kiếm
+                learners = learners.Where(l => l.FirstMidName.ToLower()
+                    .Contains(keyword.ToLower()));
+                //gửi keyword về view để ghi lại trên nav-phân trang
+                ViewBag.keyword = keyword;
+            }
+            //tính số trang
+            int pageNum = (int)Math.Ceiling(learners.Count() / (float)pageSize);
+            //gửi số trang về view để hiển thị nav-trang
+            ViewBag.pageNum = pageNum;
+            //chọn dữ liệu trong trang hiện tại
+            var result = learners.Skip(pageSize * (page - 1))
+                        .Take(pageSize).Include(m => m.Major);
+            return PartialView("LearnerTable", result);
+        }
         [HttpPost]
         [ValidateAntiForgeryToken]
         public IActionResult Create([Bind("FirstMidName,LastName,MajorID,EnrollmentDate")] Learner learner)

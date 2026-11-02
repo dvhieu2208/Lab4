@@ -20,57 +20,69 @@ build_property.TargetFrameworkVersion = v10.0
 build_property.EntryPointFilePath = 
 build_property.RootNamespace = Lab4
 build_property.RootNamespace = Lab4
-build_property.ProjectDir = C:\Users\My Laptop\Documents\.NET\Lab4\Lab4\
+build_property.ProjectDir = D:\.NET\Lab4\Lab4\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 10.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\My Laptop\Documents\.NET\Lab4\Lab4
+build_property.MSBuildProjectDirectory = D:\.NET\Lab4\Lab4
 build_property._RazorSourceGeneratorDebug = 
 build_property.EffectiveAnalysisLevelStyle = 10.0
 build_property.EnableCodeStyleSeverity = 
 
-[C:/Users/My Laptop/Documents/.NET/Lab4/Lab4/Views/Home/Index.cshtml]
+[D:/.NET/Lab4/Lab4/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/My Laptop/Documents/.NET/Lab4/Lab4/Views/Home/Privacy.cshtml]
+[D:/.NET/Lab4/Lab4/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/My Laptop/Documents/.NET/Lab4/Lab4/Views/Learner/Create.cshtml]
+[D:/.NET/Lab4/Lab4/Views/Learner/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGVhcm5lclxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/My Laptop/Documents/.NET/Lab4/Lab4/Views/Learner/Delete.cshtml]
+[D:/.NET/Lab4/Lab4/Views/Learner/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGVhcm5lclxEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/My Laptop/Documents/.NET/Lab4/Lab4/Views/Learner/Edit.cshtml]
+[D:/.NET/Lab4/Lab4/Views/Learner/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGVhcm5lclxFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/My Laptop/Documents/.NET/Lab4/Lab4/Views/Learner/Index.cshtml]
+[D:/.NET/Lab4/Lab4/Views/Learner/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGVhcm5lclxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/My Laptop/Documents/.NET/Lab4/Lab4/Views/Shared/Error.cshtml]
+[D:/.NET/Lab4/Lab4/Views/Learner/LearnerTable.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGVhcm5lclxMZWFybmVyVGFibGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/.NET/Lab4/Lab4/Views/Shared/Components/Major/RenderMajor.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcTWFqb3JcUmVuZGVyTWFqb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/.NET/Lab4/Lab4/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/My Laptop/Documents/.NET/Lab4/Lab4/Views/Shared/_ValidationScriptsPartial.cshtml]
+[D:/.NET/Lab4/Lab4/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/My Laptop/Documents/.NET/Lab4/Lab4/Views/_ViewImports.cshtml]
+[D:/.NET/Lab4/Lab4/Views/_MyLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX015TGF5b3V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/.NET/Lab4/Lab4/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/My Laptop/Documents/.NET/Lab4/Lab4/Views/_ViewStart.cshtml]
+[D:/.NET/Lab4/Lab4/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/My Laptop/Documents/.NET/Lab4/Lab4/Views/Shared/_Layout.cshtml]
+[D:/.NET/Lab4/Lab4/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-1poynvviun
